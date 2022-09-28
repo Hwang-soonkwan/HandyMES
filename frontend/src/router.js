@@ -26,6 +26,11 @@ import PurchaseOrderDetail from "./components/listers/PurchaseOrderDetail"
 import PurchaseInManager from "./components/listers/PurchaseInCards"
 import PurchaseInDetail from "./components/listers/PurchaseInDetail"
 
+import ProductOrderManager from "./components/listers/ProductOrderCards"
+import ProductOrderDetail from "./components/listers/ProductOrderDetail"
+import ProductDeliveryManager from "./components/listers/ProductDeliveryCards"
+import ProductDeliveryDetail from "./components/listers/ProductDeliveryDetail"
+
 
 export default new Router({
     // mode: 'history',
@@ -122,6 +127,27 @@ export default new Router({
                 path: '/purchaseIns/:id',
                 name: 'PurchaseInDetail',
                 component: PurchaseInDetail
+            },
+
+            {
+                path: '/productOrders',
+                name: 'ProductOrderManager',
+                component: ProductOrderManager
+            },
+            {
+                path: '/productOrders/:id',
+                name: 'ProductOrderDetail',
+                component: ProductOrderDetail
+            },
+            {
+                path: '/productDeliveries',
+                name: 'ProductDeliveryManager',
+                component: ProductDeliveryManager
+            },
+            {
+                path: '/productDeliveries/:id',
+                name: 'ProductDeliveryDetail',
+                component: ProductDeliveryDetail
             },
 
 
